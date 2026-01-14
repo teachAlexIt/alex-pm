@@ -1,0 +1,125 @@
+
+@font-face {
+    font-family: 'Rubik';
+    src: url(../font/Rubik/Rubik-VariableFont_wght.ttf)
+}
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, grey, black);
+    background-size: 400%;
+}
+
+.app{
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    border-radius: 20px;
+    height: 90vh;
+}
+@media (max-width: 600px){
+    .app{
+        width: 100%;
+        border-radius: 0;
+        height: 100vh;
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+.connection{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.connection div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, button{
+    height: 40px;
+    padding: 0 16px;
+}
+button{
+    cursor: pointer;
+}
+
+
+.chat-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: rgb(243, 243, 243);
+    padding: 0 8px;
+    border-radius: 10px;
+}
+
+.message{
+    border-radius: 10px;
+    padding: 6px;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.message span{
+    font-size: 12px;
+    align-self: end;
+    font-style: italic;
+}
+
+.message_from-me{
+    align-self: end;
+    background-color: gray;
+}
+
+.message_for-me{
+    align-self: start;
+     background-color: rgb(183, 183, 183);
+}
+
+
+.sending-message{
+    display: flex;
+    
+}
+.sending-message textarea{
+    flex-grow: 1;
+}
+
+
+/* js логика */
+.disconnect-button{
+    display: none;
+}
+
+.chat-list{
+    display: none;
+}
+
+.sending-message{
+    display: none;
+}

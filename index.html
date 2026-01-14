@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex - private messenger</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="app">
+        <h1>Alex - приватный мессенджер</h1>
+        <p>
+            Придумайте название секретного чата, устно сообщите его кому необходимо и обсуждайте необходимые вопросы
+            полностью приватно
+        </p>
+        <div id="connectionDiv" class="connection">
+            <div>
+                <label for="">Имя чата (секрет)</label>
+                <input type="text" name="" id="chatNameInput">
+            </div>
+
+            <div>
+                <label for="">Псевдоним (имя под вашими сообщениями)</label>
+                <input type="text" name="" id="userNameInput">
+            </div>
+
+            <div>
+                <button id="connectButton">Подключиться к чату</button>
+            </div>
+        </div>
+        <button id="disconnectButton" class="disconnect-button">Отключиться</button>
+        <div id="chatListDiv" class="chat-list">
+            <div class="message message_from-me">
+                <h3>Max</h3>
+                <p>Привет! Как ты?</p>
+                <span>14.01.2026 13:24</span>
+            </div>
+
+            <div class="message message_for-me">
+                <h3>Alex</h3>
+                <p>Я норм! </p>
+                <span>14.01.2026 13:26</span>
+            </div>
+
+            <div class="message message_for-me">
+                <h3>Alex</h3>
+                <p>Как ты?</p>
+                <span>14.01.2026 13:26</span>
+            </div>
+        </div>
+        <div id="sendingMessageDiv" class="sending-message">
+            <textarea name="" id="messageTextarea"></textarea>
+            <button id="sendMessageButton">Отправить</button>
+        </div>
+    </div>
+</body>
+
+</html>
